@@ -57,11 +57,19 @@ VCR does this for HTTP calls.
 
 ## Usage
 
-`$pcache cat test.txt`
+### Cache output text file
+```bash
+$pcache cat test.txt
+```
 
-### Parameters
+### Cache date 
+```
+$pcache date -u +"%Y-%m-%dT%H:%M:%SZ"
+```
 
-| Parameter | Default value | Description |
+### Arguments
+
+| Argument  | Default value | Description |
 | --------- | ------------- | ----------- |
 | `--scope` |  | Scope of a pcache-file. Will be appended to the filename |
 
@@ -74,9 +82,15 @@ Configuration can be stored in a `.pcache.yml` file.
 | `directory` | `./pcache-files` | Directory where to store the files |
 | `retention` | `∞` | Retention time in days |
 
-## Build
+## Development 
 
-`cargo build`
+```bash
+cargo build
+```
+
+```bash
+cargo run date 
+```
 
 ## Inspirations
 
